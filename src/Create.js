@@ -12,7 +12,7 @@ const Create = () => {
 
         setIsPending(true);
 
-        fetch('http://localhost:8000/users', {
+        fetch('http://localhost:8080/person', {
             method:'POST',
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify(user)
@@ -45,6 +45,6 @@ const Create = () => {
         </div>
      );
 }
-//npx json-server --watch data/db.json --port 8000 
+//npx json-server --watch data/db.json --port 8080 
  
 export default Create;

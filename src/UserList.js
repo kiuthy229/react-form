@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-const UserList = ({ users }) => {
+const UserList = ({ person }) => {
   return (
     <div className="user-list">
-      {users.map(user => (
+      {person.map(user => (
         <div className="user-preview" key={user.id} >
-          <Link to={`/users/${user.id}`}>
+          <Link to={`/person/${user.id}`}>
             <h2>{ user.firstname } { user.lastname }</h2>
           </Link>
         </div>

@@ -41,7 +41,7 @@ class App extends Component{
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/create" element={<Create />}></Route>
-          <Route path="/users/:id" element={<UserDetails/>}></Route>
+          <Route path="/person/:id" element={<UserDetails/>}></Route>
         </Routes>
         </div>
         {/* <Form onSubmit={fields => this.onSubmit(fields)}/>
