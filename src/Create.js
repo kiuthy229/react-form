@@ -27,9 +27,12 @@ const Create = () => {
         <div className="create">
             <h2>Hello from react</h2>
             <form onSubmit={handleSubmit}>
-                First Name : <input name="firstName" placeholder='firstName' value={firstname} onChange={e => setFirstname(e.target.value)}></input>
-                Last Name: <input name="lastName" placeholder='lastName' value={lastname} onChange={e => setLastname(e.target.value)}></input>
-                Gender: <input name="gender" placeholder='gender' value={gender} onChange={e => setGender(e.target.value)}></input>
+                <label>First Name : </label>
+                <input name="firstName" placeholder='firstName' value={firstname} onChange={e => setFirstname(e.target.value)}></input>
+                <label>Last Name: </label>
+                <input name="lastName" placeholder='lastName' value={lastname} onChange={e => setLastname(e.target.value)}></input>
+                <label>Gender: </label>
+                <input name="gender" placeholder='gender' value={gender} onChange={e => setGender(e.target.value)}></input>
                 { !isPending && <button >Submit</button>}
                 { isPending && <button disabled>Submitting...</button>}
             </form>
