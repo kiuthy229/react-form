@@ -1,14 +1,22 @@
 {
-    "users": [
-        {
-            "firstname": "Kieu Thy",
-            "lastname": "Nguyen",
-            "gender": "Female"
-        },
-        {
-            "firstname": "Thinh",
-            "lastname": "Le",
-            "gender": "Male"
-        }
-    ]
+  "users": [
+    {
+      "firstname": "Kieu Thy",
+      "lastname": "Nguyen",
+      "gender": "Female",
+      "id": 1
+    },
+    {
+      "firstname": "Thinh",
+      "lastname": "Le",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "firstname": "fn",
+      "lastname": "ln",
+      "gender": "gender",
+      "id": 3
+    }
+  ]
 }

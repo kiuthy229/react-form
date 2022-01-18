@@ -42,6 +42,6 @@ const Create = () => {
         </div>
      );
 }
-//npx json-server --watch data/db.json --port 8080 
+//npx json-server --watch data/db.json --port 8000 
  
 export default Create;
