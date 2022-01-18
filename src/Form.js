@@ -12,6 +12,8 @@ export default class Form extends React.Component {
             [e.target.name]: e.target.value
         });
     };
+    
+    
 
     onSubmit = e => {
         e.preventDefault();
@@ -25,12 +27,17 @@ export default class Form extends React.Component {
 
     render(){
         return(
+            <div className="create">
             <form>
-                First Name : <input name="firstName" placeholder='firstName' value={this.state.firstName} onChange={e => this.change(e)}></input> <br/>
-                Last Name: <input name="lastName" placeholder='lastName' value={this.state.lastName} onChange={e => this.change(e)}></input> <br/>
-                Gender: <input name="gender" placeholder='gender' value={this.state.gender} onChange={e => this.change(e)}></input> <br/>
+                <label>First Name : </label>
+                <input name="firstName" placeholder='firstName' value={this.state.firstName} onChange={e => this.change(e)}></input> <br/>
+                <label>Last Name: </label>
+                <input name="lastName" placeholder='lastName' value={this.state.lastName} onChange={e => this.change(e)}></input> <br/>
+                <label>Gender: </label>
+                <input name="gender" placeholder='gender' value={this.state.gender} onChange={e => this.change(e)}></input> <br/>
                 <button onClick={e=> this.onSubmit(e)}>Submit</button>
             </form>
+        </div>
         );
     }
 }

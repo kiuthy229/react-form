@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "firstname": "Kieu Thy",
+            "lastname": "Nguyen",
+            "gender": "Female"
+        },
+        {
+            "firstname": "Thinh",
+            "lastname": "Le",
+            "gender": "Male"
+        }
+    ]
+}
