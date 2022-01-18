@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 const Create = () => {
-    const [firstname, setFirstname] = useState('fn');
-    const [lastname, setLastname] = useState('ln');
-    const [gender, setGender] = useState('gender');
+    const [firstname, setFirstname] = useState('First Name');
+    const [lastname, setLastname] = useState('Last Name');
+    const [gender, setGender] = useState('Female');
     const [isPending, setIsPending] = useState(false);
 
     const handleSubmit = (e) => {
@@ -28,11 +28,14 @@ const Create = () => {
             <h2>Hello from react</h2>
             <form onSubmit={handleSubmit}>
                 <label>First Name : </label>
-                <input name="firstName" placeholder='firstName' value={firstname} onChange={e => setFirstname(e.target.value)}></input>
+                <input name="firstName" placeholder={firstname} onChange={e => setFirstname(e.target.value)}></input>
                 <label>Last Name: </label>
-                <input name="lastName" placeholder='lastName' value={lastname} onChange={e => setLastname(e.target.value)}></input>
+                <input name="lastName" placeholder={lastname} onChange={e => setLastname(e.target.value)}></input>
                 <label>Gender: </label>
-                <input name="gender" placeholder='gender' value={gender} onChange={e => setGender(e.target.value)}></input>
+                <select name="gender" placeholder={gender} onChange={e => setGender(e.target.value)}>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
                 { !isPending && <button >Submit</button>}
                 { isPending && <button disabled>Submitting...</button>}
             </form>

@@ -42,7 +42,7 @@
   display:block;
 }
 
-.create input {
+.create input, .create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
