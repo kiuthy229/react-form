@@ -1,37 +1,57 @@
 [
-    {
-      "id": 1,
-      "department": "IT",
-      "tags": "3 waterfoot road",
-      "title": "asdaf",
-      "content": "asdfasdf"
-    },
-    {
-      "id": 2,
-      "department": "IT",
-      "tags": "3 waterfoot road",
-      "title": "asdaf",
-      "content": "asdfasdf"
-    },
-    {
-      "id": 3,
-      "department": "IT",
-      "tags": "3 waterfoot road",
-      "title": "asdaf",
-      "content": "asdfasdf"
-    },
-    {
-      "id": 4,
-      "department": "IT",
-      "tags": "3 waterfoot road",
-      "title": "asdaf",
-      "content": "asdfasdf"
-    },
-    {
-      "id": 5,
-      "department": "IT",
-      "tags": "3 waterfoot road",
-      "title": "asdaf",
-      "content": "asdfasdf"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "adsfn",
+    "content": "adsasdf",
+    "department": "Science",
+    "thumbsUp": 5,
+    "thumbsDown": 3,
+    "tag": "Female",
+    "timeStamp": "22/01/2022",
+    "closureDate": "22/06/2022"
+  },
+  {
+    "id": 2,
+    "title": "2",
+    "content": "2",
+    "department": "Science",
+    "thumbsUp": 5,
+    "thumbsDown": 3,
+    "tag": "Female",
+    "timeStamp": "22/01/2022",
+    "closureDate": "22/06/2022"
+  },
+  {
+    "id": 3,
+    "title": "3",
+    "content": "3",
+    "department": "Eng",
+    "thumbsUp": 5,
+    "thumbsDown": 3,
+    "tag": "Female",
+    "timeStamp": "22/01/2022",
+    "closureDate": "22/06/2022"
+  },
+  {
+    "id": 4,
+    "title": "4",
+    "content": "4",
+    "department": "IT",
+    "thumbsUp": 5,
+    "thumbsDown": 3,
+    "tag": "Female",
+    "timeStamp": "22/01/2022",
+    "closureDate": "22/06/2022"
+  },
+  {
+    "id": 5,
+    "title": "5",
+    "content": "5",
+    "department": "HR",
+    "thumbsUp": 5,
+    "thumbsDown": 3,
+    "tag": "Female",
+    "timeStamp": "22/01/2022",
+    "closureDate": "22/06/2022"
+  }
+]
