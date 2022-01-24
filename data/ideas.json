@@ -1,16 +1,59 @@
 {
-    "person": [
-      {
-        "content": "adsasdf",
-        "title": "adsfn",
-        "tag": "Female",
-        "id": 1
-      },
-      {
-        "firstname": "Thinh",
-        "lastname": "Le",
-        "gender": "Male",
-        "id": 2
-      }
-    ]
-  }
+  "ideas": [
+    {
+      "id": 1,
+      "title": "adsfn",
+      "content": "adsasdf",
+      "department": "Science",
+      "thumbsUp": 5,
+      "thumbsDown": 3,
+      "tag": "Female",
+      "timeStamp": "22/01/2022",
+      "closureDate": "22/06/2022"
+    },
+    {
+      "id": 2,
+      "title": "2",
+      "content": "2",
+      "department": "Science",
+      "thumbsUp": 5,
+      "thumbsDown": 3,
+      "tag": "Female",
+      "timeStamp": "22/01/2022",
+      "closureDate": "22/06/2022"
+    },
+    {
+      "id": 3,
+      "title": "3",
+      "content": "3",
+      "department": "Science",
+      "thumbsUp": 5,
+      "thumbsDown": 3,
+      "tag": "Female",
+      "timeStamp": "22/01/2022",
+      "closureDate": "22/06/2022"
+    },
+    {
+      "id": 4,
+      "title": "4",
+      "content": "4",
+      "department": "Science",
+      "thumbsUp": 5,
+      "thumbsDown": 3,
+      "tag": "Female",
+      "timeStamp": "22/01/2022",
+      "closureDate": "22/06/2022"
+    },
+    {
+      "id": 5,
+      "title": "5",
+      "content": "5",
+      "department": "Science",
+      "thumbsUp": 5,
+      "thumbsDown": 3,
+      "tag": "Female",
+      "timeStamp": "22/01/2022",
+      "closureDate": "22/06/2022"
+    }
+  ]
+}

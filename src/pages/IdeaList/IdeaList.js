@@ -1,14 +1,20 @@
-
-import Search from "../../components/Search.js";
-import { Link } from 'react-router-dom';
+// import Search from "../../components/Search.js";
+import Search from "./Search";
+import { Link } from "react-router-dom";
 import React, { useState, Fragment } from "react";
 import { nanoid } from "nanoid";
 import data from "./mock-data.json";
 import EditableRow from "./EditableRow.js";
 import ReadOnlyRow from "./ReadOnlyRow.js";
 import "../../index.css";
+import { IconButton } from "@mui/material";
+import { MdAdd } from "react-icons/md";
+
+import { useStyles } from "./styles";
 
 const IdeaList = () => {
+  const classes = useStyles;
+
   const [ideas, setIdeas] = useState(data);
   const [addFormData, setAddFormData] = useState({
     department: "",
@@ -113,15 +119,12 @@ const IdeaList = () => {
 
     setIdeas(newIdeas);
   };
-  const handleThumbUpClick = (ideaId) => {
-    
-  };
-  const handleThumbDownClick = (ideaId) => {
+  const handleThumbUpClick = (ideaId) => {};
+  const handleThumbDownClick = (ideaId) => {};
+  return (
+    <div className="idealist">
+      <Search />
 
-  };
-    return (
-      
-      <div className="idealist">
       <form onSubmit={handleEditFormSubmit}>
         <table>
           <thead>
@@ -143,12 +146,14 @@ const IdeaList = () => {
                     editFormData={editFormData}
                     handleEditFormChange={handleEditFormChange}
                     handleCancelClick={handleCancelClick}
+                    key={idea.id}
                   />
                 ) : (
                   <ReadOnlyRow
                     idea={idea}
                     handleEditClick={handleEditClick}
                     handleDeleteClick={handleDeleteClick}
+                    key={idea.id}
                   />
                 )}
               </Fragment>
@@ -158,7 +163,7 @@ const IdeaList = () => {
       </form>
 
       <h2>Add an idea</h2>
-      <form onSubmit={handleAddFormSubmit}>
+      <form className={classes.root} onSubmit={handleAddFormSubmit}>
         <input
           type="text"
           name="department"
@@ -187,32 +192,35 @@ const IdeaList = () => {
           placeholder="Enter content..."
           onChange={handleAddFormChange}
         />
-        <button type="submit">Add</button>
+        <IconButton
+          color="primary"
+          aria-label="add"
+          component="span"
+          size="large"
+        >
+          <MdAdd />
+        </IconButton>
       </form>
     </div>
 
+    // {/* 1. Title: ‘Idea List’
+    // 2. Pagination (5 per page)
+    // 3. Search idea
+    // 4. Records are shown with the following column:
+    // Idea ID
+    // Title
+    // Department
+    // Content
+    // Time Stamp
+    // 5. Thumbs up/down
+    // 6. Tags
+    // 7. View Idea Detail
+    // 8. Create idea
+    // 9. Create Closure Date for new ideas
+    // */}
 
-        // {/* 1. Title: ‘Idea List’
-        // 2. Pagination (5 per page)
-        // 3. Search idea
-        // 4. Records are shown with the following column:
-        // Idea ID
-        // Title
-        // Department
-        // Content
-        // Time Stamp
-        // 5. Thumbs up/down
-        // 6. Tags
-        // 7. View Idea Detail 
-        // 8. Create idea
-        // 9. Create Closure Date for new ideas
-        // */}
-                    
-        // {/* <IdeaCreate /> */}
-        
-    
-    );
+    // {/* <IdeaCreate /> */}
+  );
 };
 
 export default IdeaList;
-
