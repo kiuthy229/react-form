@@ -1,6 +1,7 @@
 import { useState} from "react";
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
+import "../index.css";
 
 // import { colourOptions } from 'react-form';
 
@@ -25,7 +26,7 @@ const IdeaCreate = () => {
                     <label>Title: </label>
                     <input type="text" name="title" placeholder="title" onChange={e => setContent(e.target.value)} />
                 </div>
-
+                <br/>
                 <div>
                     <label>Content</label>
                     <input className="idea-content" type="textarea" name="content" placeholder="content" rows ="4" onChange={e => setTitle(e.target.value)} />
@@ -44,8 +45,8 @@ const IdeaCreate = () => {
                             options={options}/>
                     {/* //custom add more tags */}
                 </div>
+                
                 <br/>
-
                 {/* <div>
                     <label>Upload</label>
                     <input type="file"
@@ -61,23 +62,22 @@ const IdeaCreate = () => {
                     <h3>
                         Terms and Conditions
                     </h3>
-                    <div>
+                    <div className="term-conditions">
                         Et natus molestias et doloribus. Quis quae enim dolores dolores aperiam ullam eaque. Eveniet aut et qui alias consequuntur expedita consequatur aspernatur. Qui est ut modi aut ut. Non est dolor ipsum numquam doloribus deserunt molestiae et animi. Voluptatem sint fuga est eum.
                     </div>
                 </div>
                 <br/>
 
-                
-                <br/>
-
                 {/* (VyPNK) Term & condition select + Submit */}
-                <div>
+                <div className="agree-check">
                     <input
                         type="checkbox"
                         name="agreement"
                         onChange={e => setAgree(e.target.value)} />
                     I Agree with Terms & Conditions
                 </div>
+
+                <br/>
 
                 <button>Submit</button>
             </form>

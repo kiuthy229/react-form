@@ -117,16 +117,42 @@ td {
   background-color: rgb(205, 235, 253);
 }
 
-form {
+.idealist form {
   display: flex;
   gap: 5px;
 }
 
-form td:last-child {
+.idealist form td:last-child {
   display: flex;
   justify-content: space-evenly;
 }
 
-form * {
+.idealist form * {
   font-size: 15px;
+}
+.ideacreate {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.term-conditions{
+  text-align: left;
+}
+.ideacreate label {
+  text-align:left;
+  display:block;
+}
+
+.ideacreate input, .ideacreate select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display:block;
+}
+.agree-check{
+  text-align: left;
+  align-items:flex-start;
+  display:inline-block;
 }

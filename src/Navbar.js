@@ -14,10 +14,9 @@ const Navbar = () => {
       <h1>Web Enterprise</h1>
       <div className="links">
         <a href="/idealist">Idea List</a>
-        <a href="/ideas">Ideas</a>
-        <a href="/create">Create</a>
-        <a href="/login">Login</a>
         <a href="/ideacreate">Idea Create</a>
+        <a href="/login">Login</a>
+        <br/>
         <input
           type="text"
           placeholder="Search"
